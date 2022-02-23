@@ -20,9 +20,9 @@ public class RandomPanelFrame extends JFrame {
     class SouthPanel extends JPanel {
         public SouthPanel() {
             setBackground(Color.YELLOW);
-            setOpaque.(true);
-            add.(new JButton("Word Input"));
-            add.(new JTextField(20));
+            setOpaque(true);
+            add(new JButton("Word Input"));
+            add(new JTextField(15));
         }
     }
     
@@ -32,10 +32,10 @@ public class RandomPanelFrame extends JFrame {
             setLayout(null);
             for (int i = 0; i < 10; i++) {
                 JLabel la = new JLabel("*");
-                int x = (int)(Math.random() * 300);
-                int y = (int)(Math.random() * 300);
+                int x = (int)(Math.random() * 250);
+                int y = (int)(Math.random() * 150);
                 la.setLocation(x, y);
-                la.setSize(30, 30);
+                la.setSize(10, 10);
                 add(la);
             }
             
